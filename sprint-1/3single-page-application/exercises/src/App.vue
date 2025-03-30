@@ -4,6 +4,7 @@ import exercise2 from './vue-exercises/exercise2.vue';
 import exercise3 from './vue-exercises/exercise3.vue';
 import exercise4 from './vue-exercises/exercise4.vue';
 import exercise5 from './vue-exercises/exercise5.vue';
+import exercise6 from './vue-exercises/exercise6.vue';
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import exercise5 from './vue-exercises/exercise5.vue';
     <exercise3 />
     <exercise4 />
     <exercise5 />
+    <exercise6 />
   </main>
 </template>
 

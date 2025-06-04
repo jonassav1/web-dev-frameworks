@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-import { errorCurrent } from '@/stores/errors';
+import { ref, watch } from "vue";
+import { errorCurrent } from "@/stores/errors";
 
 const isDisplayed = ref(false);
 

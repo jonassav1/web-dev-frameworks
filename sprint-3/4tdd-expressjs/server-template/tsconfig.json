@@ -1,0 +1,27 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "src/database/migrations/20250615192530-createScreeningTable.js"
+  ],
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
+
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+
+    "strict": true,
+    "sourceMap": true,
+
+    "types": ["vitest/globals"],
+
+    "paths": {
+      "@/*": ["./src/*"],
+      "@tests/*": ["./tests/*"]
+    }
+  }
+}

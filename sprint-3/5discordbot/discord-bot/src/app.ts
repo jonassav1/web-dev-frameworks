@@ -1,7 +1,7 @@
 import express from 'express'
 import { type Database } from './database'
-// import templateController from './modules/templates/controller'
-// import sprintController from './modules/sprints/controller'
+import templateController from './modules/templates/controller'
+import sprintController from './modules/sprints/controller'
 import messagesController from './modules/messages/controller'
 import jsonErrorHandler from './middleware/jsonErrors'
 
@@ -13,9 +13,9 @@ export default function createApp(db: Database) {
 
   // register your controllers here
 
-  // app.use('/templates', templateController(db))
-  // app.use('/sprints', sprintController(db))
   app.use('/messages', messagesController(db))
+  app.use('/sprints', sprintController(db))
+  app.use('/templates', templateController(db))
 
   app.use(jsonErrorHandler)
   return app

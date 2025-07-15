@@ -3,7 +3,6 @@ import type {
   Insertable,
   Selectable,
   SqlBool,
-  Updateable,
 } from 'kysely'
 import { keys } from './schema'
 import type { Message, Database, DB } from '@/database'
@@ -13,7 +12,6 @@ type TableName = typeof TABLE
 type Row = Message
 type RowWithoutId = Omit<Row, 'id'>
 type RowInsert = Insertable<RowWithoutId>
-type RowUpdate = Updateable<RowWithoutId>
 type RowSelect = Selectable<Row>
 
 export default (db: Database) => ({
